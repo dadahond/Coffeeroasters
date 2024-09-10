@@ -459,6 +459,11 @@ main {
   padding-right: 3.1rem;
 }
 
+.footer {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .footer__container {
   background-color: #333d4b;
   max-width: 1180px;
@@ -516,9 +521,8 @@ main {
   .footer__container {
     display: flex;
     flex-direction: column;
-    max-width: 32.7rem;
+    max-width: 31.7rem;
     width: 100%;
-    margin-top: 10rem;
   }
   .footer__left {
     gap: 0;
@@ -584,6 +588,153 @@ main {
     display: block;
   }
 }
+.about-hero__container {
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1180px;
+}
+
+.about-hero__left {
+  color: #fefcf7;
+  width: 100%;
+  max-width: 445px;
+  padding: 13.7rem 0 13.7rem 8.5rem;
+}
+
+.about-hero__left h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .about-hero__container {
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 689px;
+  }
+  .about-hero__left {
+    width: 100%;
+    max-width: 390px;
+    padding: 11.8rem 0 11.8rem 5.8rem;
+  }
+  .about-hero__left h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .about-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-hero__container {
+    background-image: url(../images/about/mobile/image-hero-whitecup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 327px;
+  }
+  .about-hero__left {
+    padding: 7rem 0 8.7rem 0rem;
+    text-align: center;
+  }
+  .about-hero__left h1 {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .about-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-top: 2.4rem;
+    letter-spacing: 1px;
+  }
+}
+.plan-hero__container {
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1180px;
+}
+
+.plan-hero__left {
+  color: #fefcf7;
+  width: 100%;
+  max-width: 595px;
+  padding: 13.4rem 0 13.4rem 4.5rem;
+}
+
+.plan-hero__left h1 {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.plan-hero__left p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  padding-top: 3.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .plan-hero__container {
+    background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 689px;
+  }
+  .plan-hero__left {
+    width: 100%;
+    max-width: 430px;
+    padding: 11.8rem 0 11.8rem 5.8rem;
+  }
+  .plan-hero__left h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+  .plan-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .plan-hero__container {
+    background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 327px;
+  }
+  .plan-hero__left {
+    padding: 7rem 0.7rem 8.7rem 0.7rem;
+    text-align: center;
+  }
+  .plan-hero__left h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .about-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-top: 2.4rem;
+    letter-spacing: 1px;
+  }
+}
 .hero__container {
   background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
   background-size: contain;
@@ -637,6 +788,7 @@ main {
     font-size: 1.5rem;
     line-height: 2.5rem;
     padding-bottom: 4rem;
+    letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 400px) {

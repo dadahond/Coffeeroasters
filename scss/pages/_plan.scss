@@ -1,0 +1,84 @@
+.plan-hero {
+}
+
+.plan-hero__container {
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1180px;
+}
+
+.plan-hero__left {
+  color: $light-cream;
+  width: 100%;
+  max-width: 595px;
+  padding: 13.4rem 0 13.4rem 4.5rem;
+}
+
+.plan-hero__left h1 {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  font-family: $secondary-font;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.plan-hero__left p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  padding-top: 3.2rem;
+}
+
+// HERO MEDIA RESPONSE START
+@media screen and (max-width: 768px) {
+  .plan-hero__container {
+    background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 689px;
+  }
+  .plan-hero__left {
+    width: 100%;
+    max-width: 430px;
+    padding: 11.8rem 0 11.8rem 5.8rem;
+  }
+  .plan-hero__left h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+  .plan-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .plan-hero__container {
+    background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 327px;
+  }
+  .plan-hero__left {
+    padding: 7rem 0.7rem 8.7rem 0.7rem;
+    text-align: center;
+  }
+  .plan-hero__left h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .about-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-top: 2.4rem;
+    letter-spacing: 1px;
+  }
+}
+
+// HERO MEDIA RESPONSE END

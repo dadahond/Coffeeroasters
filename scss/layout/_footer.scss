@@ -1,4 +1,6 @@
 .footer {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .footer__container {
@@ -66,9 +68,8 @@
   .footer__container {
     display: flex;
     flex-direction: column;
-    max-width: 32.7rem;
+    max-width: 31.7rem;
     width: 100%;
-    margin-top: 10rem;
   }
   .footer__left {
     gap: 0;
@@ -81,3 +82,5 @@
     padding-bottom: 4.8rem;
   }
 }
+
+// <---FOOTER MEDIA RESPONSE END--->

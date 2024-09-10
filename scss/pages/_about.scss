@@ -1,0 +1,77 @@
+.about-hero {
+}
+
+.about-hero__container {
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1180px;
+}
+
+.about-hero__left {
+  color: $light-cream;
+  width: 100%;
+  max-width: 445px;
+  padding: 13.7rem 0 13.7rem 8.5rem;
+}
+
+.about-hero__left h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: $secondary-font;
+  font-weight: 900;
+}
+
+// HERO MEDIA RESPONSE START
+@media screen and (max-width: 768px) {
+  .about-hero__container {
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 689px;
+  }
+  .about-hero__left {
+    width: 100%;
+    max-width: 390px;
+    padding: 11.8rem 0 11.8rem 5.8rem;
+  }
+  .about-hero__left h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .about-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-hero__container {
+    background-image: url(../images/about/mobile/image-hero-whitecup.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 327px;
+  }
+  .about-hero__left {
+    padding: 7rem 0 8.7rem 0rem;
+    text-align: center;
+  }
+  .about-hero__left h1 {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .about-hero__left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-top: 2.4rem;
+    letter-spacing: 1px;
+  }
+}
+
+// HERO MEDIA RESPONSE END
