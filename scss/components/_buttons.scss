@@ -1,0 +1,21 @@
+%btn {
+  border-radius: 6px;
+  padding: 1.5rem 0;
+  font-weight: 900;
+  color: $light-cream;
+  font-size: 1.8rem;
+  background-color: $dark-cyan;
+  font-family: $secondary-font;
+  transition: 0.3s;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.hero-btn {
+  @extend %btn;
+  padding: {
+    left: 3.1rem;
+    right: 3.1rem;
+  }
+}

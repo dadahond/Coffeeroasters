@@ -27,10 +27,11 @@ img {
 }
 
 body {
-  font-family: serif;
+  display: flex;
   flex-direction: column;
+  font-family: $main-font;
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.6;
 }
 
 main {
@@ -39,9 +40,26 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
 }
+
+// NAV RESPONSIVE START
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
+  }
+}
+
+@media screen and (max-with: 400px) {
+  .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+// NAV RESPONSIVE END
