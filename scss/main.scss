@@ -9,9 +9,6 @@
 @import "./layout/header";
 @import "./pages/about";
 @import "./pages/plan";
-.hero {
-}
-
 .hero__container {
   background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
   background-size: contain;
@@ -45,10 +42,7 @@
   width: 100%;
 }
 
-// MAIN
-main {
-}
-
+// MAIN START
 .our-collection-bg {
   background-image: url(../images/home/desktop/our-collection.svg);
   background-repeat: no-repeat;
@@ -60,7 +54,7 @@ main {
   top: 5rem;
 }
 
-.coffe-type-main {
+.coffee-type-main {
   display: flex;
   gap: 3rem;
 }
@@ -71,6 +65,12 @@ main {
 }
 
 .coffee-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-type__text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,6 +91,63 @@ main {
   letter-spacing: 1px;
 }
 
+.our-collection-main {
+  padding-bottom: 10rem;
+}
+
+// SECTION WHY US
+.why-us {
+  margin-top: 10rem;
+  color: $light-cream;
+  text-align: center;
+}
+
+.why-us__container {
+  background-image: url(../images/plan/desktop/bg-order-summary.png);
+  background-color: $dark-grey-blue;
+  border-radius: 10px;
+  padding: 10rem 8.5rem 0 8.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.why-us__content {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+}
+
+.why-us__title {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  line-height: 1.2rem;
+}
+
+.why-us__description {
+}
+
+.why-us__features {
+}
+
+.why-us__features__items {
+}
+
+.why-us__features__item__image {
+}
+
+.why-us__features__item__content {
+}
+
+.why-us__features__item__title {
+}
+
+.why-us__features__item_description {
+}
+
+// MAIN END
 // HERO MEDIA RESPONSE START
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -141,3 +198,39 @@ main {
 }
 
 // HERO MEDIA RESPONSE END
+// MAIN PART MEDIA RESPONSE
+@media screen and (max-width: 768px) {
+  .our-collection-bg {
+    background-image: url(../images/home/tablet/our-collec-bg-tablet.svg);
+  }
+  .coffee-type-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .coffee-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .coffee-type__heading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .our-collection-bg {
+    background-image: url(../images/home/mobile/our-collec-bg-mobile.svg);
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .coffee-type-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .coffee-type {
+    display: flex;
+    flex-direction: column;
+  }
+}
