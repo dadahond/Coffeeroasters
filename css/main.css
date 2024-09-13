@@ -755,7 +755,6 @@ main {
   background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   border-radius: 8px;
   max-width: 1280px;
   width: 100%;
@@ -900,6 +899,60 @@ main {
   margin-top: 26rem;
 }
 
+.how-works__line {
+  display: flex;
+  align-items: center;
+  gap: 32rem;
+  background-color: #fdd6ba;
+  height: 2px;
+  width: 73rem;
+  margin-top: 5rem;
+}
+
+.how-works__round {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid #0e8784;
+}
+
+.how-works__steps-main {
+  display: flex;
+  margin-top: 6.7rem;
+  gap: 10rem;
+  margin-bottom: 4.4rem;
+}
+
+.how-works__step {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  width: 100%;
+}
+
+.how-works__step-order {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  font-family: "Fraunces", cursive;
+  color: #fdd6ba;
+  font-weight: 900;
+}
+
+.how-works__step-title {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+  color: #333d4b;
+  padding: 3.8rem 0 4.3rem 0;
+}
+
+.how-works__step-description {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width: 768px) {
   .hero__container {
     background-image: url(../images/home/tablet/image-hero-coffeepress.jpg);
@@ -944,6 +997,21 @@ main {
   }
   .hero__left p {
     padding-top: 2.4rem;
+  }
+  .how-works {
+    text-align: center;
+    margin-top: 12rem;
+  }
+  .how-works__line {
+    display: none;
+  }
+  .how-works__steps-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-works__step-order {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1009,6 +1077,9 @@ main {
   .coffee-type {
     display: flex;
     flex-direction: column;
+  }
+  .why-us__container {
+    margin-top: 0rem;
   }
   .why-us__container {
     padding-top: 6.4rem;
