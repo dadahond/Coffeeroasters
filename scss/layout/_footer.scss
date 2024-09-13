@@ -5,12 +5,13 @@
 
 .footer__container {
   background-color: $dark-grey-blue;
-  max-width: 1180px;
+  max-width: 1280px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4.7rem 8.5rem;
+  border-radius: 8px;
 }
 
 .footer__left {
@@ -41,6 +42,10 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
+}
+
+.footer__social-media__icon path:hover {
+  fill: $pale-orange;
 }
 
 // <---FOOTER MEDIA RESPONSE START--->

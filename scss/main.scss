@@ -11,11 +11,12 @@
 @import "./pages/plan";
 .hero__container {
   background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 8px;
+  max-width: 1280px;
   width: 100%;
-  max-width: 1180px;
 }
 
 .hero__left {
@@ -117,9 +118,6 @@
   margin-right: auto;
 }
 
-.container {
-}
-
 .why-us__title {
   margin-bottom: 3.2rem;
   font-size: 4rem;
@@ -127,24 +125,46 @@
 }
 
 .why-us__description {
+  opacity: 0.8;
+  margin-bottom: 8.6rem;
 }
 
 .why-us__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  transform: translateY(150px);
+  margin-top: -150px;
 }
 
 .why-us__features__items {
+  background-color: $dark-cyan;
+  padding: 7.2rem 4.8rem 4.8rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .why-us__features__item__image {
+  margin-bottom: 5.6rem;
+  align-self: center;
 }
 
 .why-us__features__item__content {
 }
 
 .why-us__features__item__title {
+  margin-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.3rem;
 }
 
 .why-us__features__item_description {
+}
+
+// HOW WORKS SECTION START
+.how-works {
+  margin-top: 26rem;
 }
 
 // MAIN END
@@ -215,6 +235,37 @@
   .coffee-type__heading {
     padding-top: 0;
   }
+  .why-us {
+    text-align: left;
+  }
+  .why-us__content {
+    text-align: center;
+  }
+  .why-us__container {
+    padding: 5.6rem 5.8rem 0 5.8rem;
+  }
+  .why-us__title {
+    font-size: 3.2rem;
+  }
+  .why-us__features__item__image {
+    margin-bottom: 0;
+  }
+  .why-us__features__item_description {
+    font-size: 1.5rem;
+  }
+  .why-us__description {
+    margin-bottom: 7rem;
+  }
+  .why-us__features__item__title {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+  }
+  .why-us__features__items {
+    flex-direction: row;
+    align-items: center;
+    gap: 5.5rem;
+    padding: 4.1rem 4.8rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -232,5 +283,34 @@
   .coffee-type {
     display: flex;
     flex-direction: column;
+  }
+  .why-us__container {
+    padding: {
+      top: 6.4rem;
+      left: 2.4rem;
+      right: 2.4rem;
+    }
+  }
+  .why-us__title {
+    font-size: 2.8rem;
+    line-height: 1.1rem;
+  }
+  .why-us__description {
+    margin-bottom: 6.4rem;
+  }
+  .why-us__features {
+    grid-template-columns: 1fr;
+  }
+  .why-us__features__items {
+    flex-direction: column;
+    padding: 7.2rem 1.2rem 4.8rem 1.2rem;
+    text-align: center;
+    gap: 0;
+  }
+  .why-us__features__item__image {
+    margin-bottom: 5.6rem;
+  }
+  .why-us__features__item__title {
+    margin-bottom: 2.4rem;
   }
 }
