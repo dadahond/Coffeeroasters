@@ -3,11 +3,16 @@
 
 .about-hero__container {
   background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  max-width: 1280px;
   width: 100%;
-  max-width: 1180px;
 }
 
+// background-repeat: no-repeat;
+// width: 100%;
+// max-width: 1180px;
 .about-hero__left {
   color: $light-cream;
   width: 100%;
