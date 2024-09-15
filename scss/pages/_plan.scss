@@ -33,6 +33,161 @@
   padding-top: 3.2rem;
 }
 
+// SECTION THREE STEPS
+.three-steps {
+  background-color: $dark-grey-blue;
+  max-width: 1280px;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.three-steps h4 {
+  color: $light-cream;
+}
+
+.three-steps p {
+  color: $light-cream;
+}
+
+// SECTION COFFEE-ORDERING
+.coffee-ordering {
+  margin-top: 12.4rem;
+}
+
+.coffee-order {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 4.4rem;
+}
+
+.side-bar__item {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-family: $secondary-font;
+  font-weight: 900;
+  color: $grey;
+  cursor: pointer;
+  &:hover {
+    color: $dark-grey-blue;
+  }
+}
+
+.coffee-order__sidebar {
+}
+
+.active {
+}
+
+.coffe-order__main {
+}
+
+.coffe-order__main h2 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: $secondary-font;
+  font-weight: 900;
+  color: $grey;
+}
+
+.coffee-order__options {
+  display: flex;
+  gap: 3rem;
+  margin-top: 5.6rem;
+}
+
+.option {
+  max-width: 228px;
+  width: 100%;
+  background-color: $light-grey;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: $pale-orange;
+  }
+}
+
+.option h3 {
+  padding: 3.2rem 2.8rem 2.4rem 2.8rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  color: $dark-grey-blue;
+}
+
+.option p {
+  padding: 0 2.8rem 8.4rem 2.8rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  font-family: $main-font;
+}
+
+.coffee-order__options {
+}
+
+.coffee-order__questions {
+  margin-top: 4.4rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question__text {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: $secondary-font;
+  font-weight: 900;
+  color: $grey;
+  padding: 4.4rem 0;
+}
+
+.question img {
+  cursor: pointer;
+}
+
+.coffee-order__summary {
+  background-color: $dark-grey-blue;
+  padding: 4.7rem 0 4.7rem 6.4rem;
+  border-radius: 8px;
+}
+
+.coffee-order__summary__title {
+  text-transform: uppercase;
+  color: #ffff;
+  opacity: 0.5;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+}
+
+.coffee-order__summary__text {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: #ffff;
+  font-family: $secondary-font;
+  font-weight: 900;
+}
+
+.capsule {
+  color: $dark-cyan;
+}
+
+.coffee-ordering .hero-btn {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
 // HERO MEDIA RESPONSE START
 @media screen and (max-width: 768px) {
   .plan-hero__container {
@@ -52,9 +207,10 @@
     font-size: 4.8rem;
     line-height: 4.8rem;
   }
-  .plan-hero__left p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+  .sidebar__list {
+    display: none;
+  }
+  .coffee-ordering .hero-btn {
   }
 }
 
@@ -80,6 +236,16 @@
     line-height: 2.5rem;
     padding-top: 2.4rem;
     letter-spacing: 1px;
+  }
+  .coffee-order__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5.6rem;
+  }
+  .coffee-order__summary {
+    padding: 2rem;
   }
 }
 

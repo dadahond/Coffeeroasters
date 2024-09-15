@@ -787,8 +787,8 @@ main {
     line-height: 2.5rem;
   }
   .headquarters {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -893,6 +893,147 @@ main {
   padding-top: 3.2rem;
 }
 
+.three-steps {
+  background-color: #333d4b;
+  max-width: 1280px;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.three-steps h4 {
+  color: #fefcf7;
+}
+
+.three-steps p {
+  color: #fefcf7;
+}
+
+.coffee-ordering {
+  margin-top: 12.4rem;
+}
+
+.coffee-order {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 4.4rem;
+}
+
+.side-bar__item {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+  color: #83888f;
+  cursor: pointer;
+}
+.side-bar__item:hover {
+  color: #333d4b;
+}
+
+.coffe-order__main h2 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+  color: #83888f;
+}
+
+.coffee-order__options {
+  display: flex;
+  gap: 3rem;
+  margin-top: 5.6rem;
+}
+
+.option {
+  max-width: 228px;
+  width: 100%;
+  background-color: #f4f1eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.option:hover {
+  background-color: #fdd6ba;
+}
+
+.option h3 {
+  padding: 3.2rem 2.8rem 2.4rem 2.8rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  color: #333d4b;
+}
+
+.option p {
+  padding: 0 2.8rem 8.4rem 2.8rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  font-family: "Barlow", san-serif;
+}
+
+.coffee-order__questions {
+  margin-top: 4.4rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question__text {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+  color: #83888f;
+  padding: 4.4rem 0;
+}
+
+.question img {
+  cursor: pointer;
+}
+
+.coffee-order__summary {
+  background-color: #333d4b;
+  padding: 4.7rem 0 4.7rem 6.4rem;
+  border-radius: 8px;
+}
+
+.coffee-order__summary__title {
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.5;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+}
+
+.coffee-order__summary__text {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: white;
+  font-family: "Fraunces", cursive;
+  font-weight: 900;
+}
+
+.capsule {
+  color: #0e8784;
+}
+
+.coffee-ordering .hero-btn {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .plan-hero__container {
     background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
@@ -911,9 +1052,8 @@ main {
     font-size: 4.8rem;
     line-height: 4.8rem;
   }
-  .plan-hero__left p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+  .sidebar__list {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
@@ -938,6 +1078,16 @@ main {
     line-height: 2.5rem;
     padding-top: 2.4rem;
     letter-spacing: 1px;
+  }
+  .coffee-order__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5.6rem;
+  }
+  .coffee-order__summary {
+    padding: 2rem;
   }
 }
 .hero__container {
