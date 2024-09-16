@@ -922,7 +922,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding-top: 4.4rem;
 }
 
 .side-bar__item {
@@ -935,6 +934,11 @@ main {
 }
 .side-bar__item:hover {
   color: #333d4b;
+}
+
+.coffe-order__main {
+  display: flex;
+  flex-direction: column;
 }
 
 .coffe-order__main h2 {
@@ -979,7 +983,11 @@ main {
 }
 
 .coffee-order__questions {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   margin-top: 4.4rem;
+  margin-bottom: 5rem;
 }
 
 .question {
@@ -994,7 +1002,6 @@ main {
   font-family: "Fraunces", cursive;
   font-weight: 900;
   color: #83888f;
-  padding: 4.4rem 0;
 }
 
 .question img {
@@ -1030,8 +1037,7 @@ main {
 
 .coffee-ordering .hero-btn {
   margin-top: 5rem;
-  display: flex;
-  justify-content: center;
+  align-self: end;
 }
 
 @media screen and (max-width: 768px) {
@@ -1089,6 +1095,15 @@ main {
   .coffee-order__summary {
     padding: 2rem;
   }
+  .coffee-ordering .hero-btn {
+    align-self: center;
+  }
+  .question img {
+    display: none;
+  }
+  .question {
+    text-align: center;
+  }
 }
 .hero__container {
   background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
@@ -1123,6 +1138,10 @@ main {
   width: 100%;
 }
 
+.our-collection-main {
+  margin-top: 10rem;
+}
+
 .our-collection-bg {
   background-image: url(../images/home/desktop/our-collection.svg);
   background-repeat: no-repeat;
@@ -1131,7 +1150,7 @@ main {
   width: 100%;
   height: 195px;
   position: relative;
-  top: 5rem;
+  left: 10rem;
 }
 
 .coffee-type-main {
@@ -1323,6 +1342,7 @@ main {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 1rem;
   }
   .hero__left {
     padding: 10rem 1.2rem;
@@ -1356,6 +1376,8 @@ main {
 @media screen and (max-width: 768px) {
   .our-collection-bg {
     background-image: url(../images/home/tablet/our-collec-bg-tablet.svg);
+    position: relative;
+    left: 1rem;
   }
   .coffee-type-main {
     display: flex;
